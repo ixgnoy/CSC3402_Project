@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Projects - UpConstruction Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="projects-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+
+        <h1 class="sitename">Travel</h1> <span>.</span> <h1 class="sitename">Now</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+    <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html"class="active">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+            <a href="#"><span>Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#" onclick="confirmLogout(event)">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade" style="background-image: url(assets/img/norway-gallery.jpg);">
+      <div class="container position-relative">
+        <h1>Packages</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Packages</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-Asia">Asia</li>
+            <li data-filter=".filter-Europe">Europe</li>
+            <li data-filter=".filter-America">America</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Asia">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/singapore-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Singapore</h4>
+                  <p>3 days 2 nights</p>
+                   <div class="start">
+           <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <p class="price">RM1,500</p>
+                    <a href="assets/img/projects/singapore-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title="<h2><em>RM1,500</em></h2> <h2>Singapore Adventure: 3 Days 2 Nights</h2>">
+                    <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="packages/project-Singapore.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Asia">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/indonesia-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Indonesia</h4>
+                  <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                  <p>4 days, 3 nights</p>
+                    <p class = "price"> RM 2,500</p>
+                 <a href="assets/img/projects/indonesia-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM2,500</em></h2> <h2>Indonesia Secret: 4 Days 3 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i>
+                    <a href="packages/project-Indonesia.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                 </a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Asia">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/japan-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Japan</h4>
+                  <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                  <p>7 days, 6 nights </p>
+                    <p class = "price"> RM 4,500</p>
+                  <a href="assets/img/projects/japan-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM4,500</em></h2> <h2>Japan Expedition: 7 Days 6 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i>
+                </a>
+                    <a href="packages/project-Japan.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Asia">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/thailand-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Thailand</h4>
+                  <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                  <p>5 days, 4 nights</p>
+                    <p class = "price"> RM 2,500</p>
+                  <a href="assets/img/projects/thailand-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Thailand.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Asia">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/china-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>China</h4>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                  <p>7 days, 6 nights</p>
+                    <p class = "price"> RM 4,500</p>
+                  <a href="assets/img/projects/china-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-China.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Asia">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/india-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>India</h4>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                  <p>6 days, 5 night</p>
+                    <p class = "price">RM 5,000</p>
+                  <a href="assets/img/projects/india-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-India.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/norway-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Norway</h4>
+                  <p>10 days 9 nights</p>
+                    <p class="price">RM12,500</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/norway-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM12,500</em></h2> <h2>Norway Adventure: 10 Days 9 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Norway.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+
+            </div><!-- End Portfolio Item -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/spain-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Spain</h4>
+                  <p>11 days 10 nights</p>
+                    <p class = "price"> RM 8,500</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/spain-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM8,500</em></h2> <h2>Spain Paradise: 11 Days 10 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Spain.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+               <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/turkey-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Turkey</h4>
+                  <p>7 days 6 nights</p>
+                    <p class = "price">RM 5,000</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/turkey-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM5,000</em></h2> <h2>Turkey Discovery: 7 Days 6 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Turkey.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+                  <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/germany-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Germany</h4>
+                  <p>8 days 7 nights</p>
+                    <p class = "price">RM 8,000</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/germany-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Germany.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+                     <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/france-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>France</h4>
+                  <p>10 days 9 nights</p>
+                    <p class = "price">RM 8,000</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/france-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-France.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+                        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/italy-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Italy</h4>
+                  <p>9 days 8 nights</p>
+                    <p class = "price">RM 8,500</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/italy-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Italy.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+ <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/united-kingdom-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>United Kingdom</h4>
+                  <p>10 days 9 nights</p>
+                    <p class = "price">RM 8,000</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/united-kingdom-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-UK.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/belgium-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Belgium</h4>
+                  <p>11 days 10 nights</p>
+                    <p class = "price">RM 9,000</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/belgium-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Belgium.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Europe">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/switzerland-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Switzerland</h4>
+                  <p>10 days 9 nights</p>
+                    <p class = "price">RM 10,500</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/switzerland-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Swis.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+
+            </div><!-- End Portfolio Item -->
+                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-America">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/usa-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>United States</h4>
+                  <p>9 days 8 nights</p>
+                    <p class = "price">RM 10,500</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/usa-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM10,500</em></h2> <h2>USA Uncovered: 9 Days 8 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-USA.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+
+            </div><!-- End Portfolio Item -->
+                        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-America">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/brazil-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Brazil</h4>
+                  <p>8 days 7 nights</p>
+                    <p class = "price">RM 7,000</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/brazil-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM7,000</em></h2> <h2>Brazilian Adventure: 8 Days 7 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Brazil.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+                            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-America">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/canada-packages.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Canada</h4>
+                  <p>10 days 9 nights</p>
+                    <p class = "price">RM 9,500</p>
+                   <div class="start">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                     </div>
+                    <a href="assets/img/projects/canada-packages.jpg" title="See More" data-gallery="portfolio-gallery-app" class="glightbox preview-link custom-glightbox" data-title='<h2><em>RM9,500</em></h2> <h2>Canadian Expedition : 10 Days 9 Nights</h2>'>
+                    <i class="bi bi-zoom-in"></i></a>
+                    <a href="packages/project-Canada.html" title="More Details" class="details-link"><i class="bi bi-info-circle"></i></a>
+                </div>
+              </div>
+
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+
+    </section><!-- /Projects Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Travel.Now</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kuala Lumpur</p>
+            <p>Malaysia</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+60123456789</span></p>
+            <p><strong>Email:</strong> <span>hebat@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Travel.Now</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#About">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#constructions">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Affordable Hotel</a></li>
+            <li><a href="#services">Foods and Drinks</a></li>
+            <li><a href="#services">Safety Guide</a></li>
+            <li><a href="#services">Fastest Travel</a></li>
+            <li><a href="#services">Adventures</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Discover</h4>
+          <ul>
+            <li><a href="#packages">Asia</a></li>
+            <li><a href="#packages">Europe</a></li>
+            <li><a href="#packages">America</a></li>
+          </ul>
+        </div>      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">UpConstruction</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+function confirmLogout(event) {
+    event.preventDefault();
+    if (confirm("Are you sure you want to logout?")) {
+        window.location.href = 'Login.html';
+    }
+}
+</script>
+</body>
+
+</html>

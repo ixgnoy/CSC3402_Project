@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Sign In Page</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/bootstrap-login-form.min.css" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <style>
+    .gradient-custom {
+      background: #ff15ac;
+
+      background: -webkit-linear-gradient(to bottom right, rgb(224, 134, 61), rgb(84, 17, 138));
+
+      background: linear-gradient(to bottom right, rgb(255, 0, 168), rgb(255, 89, 0))
+    }
+
+    .card-registration .form-control-lg {
+      font-size: 1rem;
+      line-height: 2.15;
+      padding-left: .75em;
+      padding-right: .75em;
+        border: 1px solid #e07bb2; /* Add this line */
+
+    }
+
+    .card-registration .select-arrow {
+      top: 13px;
+    }
+
+    .form-outline {
+  position: relative;
+  padding-top: 1.5em; /* space for the label */
+}
+
+.form-outline label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #757575;
+  transition: all .2s;
+  pointer-events: none;
+}
+
+/* when the input is not empty */
+.form-outline input:not(:placeholder-shown) + label,
+/* when the input is focused */
+.form-outline input:focus + label {
+  top: -1em;
+  font-size: .8em;
+  color: #ff5576;
+  background: #fff;
+  padding: 0 .25em;
+}
+
+.form-outline input {
+  width: 100%;
+  padding: .75em .75em;
+  border: 2px solid #ced4da; /* Make border thicker */
+  border-radius: .25em;
+  background-color: #fff; /* Set a background color */
+  color: #495057; /* Set text color for contrast */
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Style focus state */
+.form-outline input:focus {
+  border-color: #ff5576; /* Change focus border color */
+  background-color: #fff; /* Ensure background color remains white on focus */
+  box-shadow: 0 0 0 0.2rem rgba(255, 85, 118, 0.25); /* Add a glow effect on focus */
+}
+
+ .logo-text {
+      font-size: 48px; /* large font size for the logo */
+      font-weight: bold; /* make the logo text bold */
+      color: #ff5576; /* adjust the color to fit your design */
+      text-align: center; /* center the logo text */
+      margin-bottom: 20px; /* space below the logo */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start SignUp -->
+  <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+                            <h2 class="logo-text">Travel.Now</h2>
+
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Signing In</h3>
+              <form>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+
+                    <div class="form-outline">
+                      <input type="text" id="firstName" class="form-control form-control-lg" />
+                      <label class="form-label" for="firstName">First Name</label>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 mb-4">
+
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control form-control-lg" />
+                      <label class="form-label" for="lastName">Last Name</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                    <div class="form-outline datepicker w-100">
+                      <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                      <label for="birthdayDate" class="form-label">Birthday (dd/mm/yyyy)</label>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 mb-4">
+
+                    <h6 class="mb-2 pb-1">Gender: </h6>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="option1" checked />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="option2" />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+
+                    <div class="form-outline">
+                      <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                      <label class="form-label" for="emailAddress">Email</label>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 mb-4 pb-2">
+
+                    <div class="form-outline">
+                      <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                      <label class="form-label" for="phoneNumber">Phone Number</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+
+                  </div>
+                </div>
+
+                <div class="mt-4 pt-2">
+                <div style="display: flex; justify-content: center;">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='LogIn.html'">Sign In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
