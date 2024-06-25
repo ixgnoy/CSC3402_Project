@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Project Details - UpConstruction Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="project-details-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <a href="../index.html" class="logo d-flex align-items-center">
+            <h1 class="sitename">Travel</h1> <span>.</span> <h1 class="sitename">Now</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../packages.html" class="active">Packages</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#"><span>Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="#" onclick="confirmLogout(event)">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade" style="background-image: url(../assets/img/norway-gallery.jpg);">
+        <div class="container position-relative">
+            <h1>Package Details</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="current">Package Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- End Page Title -->
+
+    <!-- Project Details Section -->
+    <section id="project-details" class="project-details section">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="portfolio-details-slider swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                            "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "navigation": {
+                            "nextEl": ".swiper-button-next",
+                            "prevEl": ".swiper-button-prev"
+                        },
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+
+                    <div class="swiper-slide">
+                        <img src="../assets/img/spain.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/img/spain1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/img/spain2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="row justify-content-between gy-4 mt-4">
+
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="portfolio-description">
+                        <h1>Spain: 11 Days, 10 Nights</h1>
+                        <h3>Day 1: Arrival in Barcelona</h3>
+                        <p>Arrive in Barcelona and check into your hotel. Begin your exploration with a visit to the Sagrada Familia and Park Güell, iconic landmarks designed by Antoni Gaudí. Stroll along La Rambla and enjoy a dinner of tapas at a local restaurant.</p>
+
+                        <h3>Day 2: Barcelona</h3>
+                        <p>Discover the cultural and architectural wonders of Barcelona. Visit the Picasso Museum, Gothic Quarter, and Barcelona Cathedral. In the evening, take a leisurely walk along the beachfront or enjoy a flamenco show.</p>
+
+                        <h3>Day 3: Barcelona to Valencia</h3>
+                        <p>Travel to Valencia by high-speed train. Check into your hotel and explore the City of Arts and Sciences, including the Oceanografic and Hemisfèric. Visit the historic Valencia Cathedral and Mercado Central. Enjoy a traditional Valencian paella dinner.</p>
+
+                        <h3>Day 4: Valencia to Granada</h3>
+                        <p>Travel to Granada and check into your hotel. Visit the Alhambra Palace, a UNESCO World Heritage site, and Generalife Gardens. Explore the historic Albayzin district and enjoy views of the Alhambra from Mirador de San Nicolás.</p>
+
+                        <h3>Day 5: Granada</h3>
+                        <p>Explore more of Granada, visiting the Cathedral and Royal Chapel. Take a leisurely walk through the Albaicín neighborhood and enjoy a traditional Andalusian dinner with views of the Alhambra.</p>
+
+                        <h3>Day 6: Granada to Seville</h3>
+                        <p>Travel to Seville and check into your hotel. Visit the Seville Cathedral, Giralda Tower, and the Royal Alcázar of Seville. Explore the historic Santa Cruz neighborhood and enjoy a flamenco performance in the evening.</p>
+
+                        <h3>Day 7: Seville</h3>
+                        <p>Take a day trip to the ancient city of Córdoba. Visit the Mezquita-Cathedral, a unique blend of Moorish and Christian architecture. Explore the Jewish Quarter and the Alcázar de los Reyes Cristianos. Return to Seville in the evening.</p>
+
+                        <h3>Day 8: Seville to Madrid</h3>
+                        <p>Travel to Madrid by high-speed train. Check into your hotel and visit the Prado Museum, home to works by Velázquez, Goya, and El Greco. Explore Retiro Park and Puerta del Sol. Enjoy a traditional Spanish dinner in the lively neighborhood of La Latina.</p>
+
+                        <h3>Day 9: Madrid</h3>
+                        <p>Discover more of Madrid's cultural treasures. Visit the Royal Palace, Plaza Mayor, and the Thyssen-Bornemisza Museum. Explore the lively Gran Vía and enjoy a sunset view from the Temple of Debod.</p>
+
+                        <h3>Day 10: Madrid to Toledo</h3>
+                        <p>Take a day trip to Toledo, known as the City of Three Cultures. Explore the Toledo Cathedral, Synagogue of Santa María la Blanca, and the Alcázar of Toledo. Return to Madrid in the evening.</p>
+
+                        <h3>Day 11: Departure from Madrid</h3>
+                        <p>Spend your final morning in Madrid shopping for souvenirs at the El Rastro Market or exploring any last-minute sights. Head to the airport for your departure, taking with you memories of Spain's rich history, culture, and cuisine.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-info">
+                        <h3>Packages</h3>
+                        <ul>
+                            <li><strong>Destination</strong> Spain</li>
+                            <li><strong>Duration</strong> 11 Days,10 Nights</li>
+                            <li><strong>Price</strong> RM8,500</li>
+                            <li><a href="../index.html#get-started" class="btn-visit align-self-start">Book Now</a></li>              </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Project Details Section -->
+
+</main>
+
+<footer id="footer" class="footer">
+
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <a href="../index.html" class="logo d-flex align-items-center">
+                    <span class="sitename">Travel.Now</span>
+                </a>
+                <div class="footer-contact pt-3">
+                    <p>Kuala Lumpur</p>
+                    <p>Malaysia</p>
+                    <p class="mt-3"><strong>Phone:</strong> <span>+60123456789</span></p>
+                    <p><strong>Email:</strong> <span>hebat@gmail.com</span></p>
+                </div>
+                <div class="social-links d-flex mt-4">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Travel.Now</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#About">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#constructions">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">Affordable Hotel</a></li>
+                    <li><a href="#services">Foods and Drinks</a></li>
+                    <li><a href="#services">Safety Guide</a></li>
+                    <li><a href="#services">Fastest Travel</a></li>
+                    <li><a href="#services">Adventures</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Discover</h4>
+                <ul>
+                    <li><a href="#packages">Asia</a></li>
+                    <li><a href="#packages">Europe</a></li>
+                    <li><a href="#packages">America</a></li>
+                </ul>
+            </div>      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">UpConstruction</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+        </div>
+    </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+<!-- Main JS File -->
+<script src="../assets/js/main.js"></script>
+<script>
+    function confirmLogout(event) {
+        event.preventDefault();
+        if (confirm("Are you sure you want to logout?")) {
+            window.location.href = 'Login.html';
+        }
+    }
+</script>
+</body>
+
+</html>

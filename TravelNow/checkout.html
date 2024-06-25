@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout Confirmation</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'>
+  <link rel="stylesheet" href="checkout/style.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <style>
+    .short-input {
+      width: calc(50% - 10px); /* Set the width of the input fields to 50% of the parent container */
+      display: inline-block; /* Display the input fields inline */
+      margin-right: 10px; /* Add some margin between the input fields */
+    }
+    body {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url("assets/img/checkout-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #323232;
+}
+
+  </style>
+</head>
+<body>
+  <div class="model">
+    <div class="room">
+      <div class="text-cover">
+        <h1>H</h1>
+        <hr>
+        <p>Entire trip for 1 person</p>
+        <p id="stayDates">H</p>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="receipt-box">
+        <h3>Receipt Summary</h3>
+        <table class="table">
+          <tr>
+            <td id="nightsSummary">120 x 2 nights</td>
+            <td id="totalPrice">240.00 RM</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td id="discount">0 RM</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td id="tax">10 RM</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td>Sum</td>
+              <td id="sum">$180</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="payment-info">
+        <h3>Payment Info</h3>
+       <form id="checkoutForm" action = "http://localhost:8080/user/payment" method = "post">
+    <label>Name on Credit Card</label>
+    <input type="text" name="creditCardName" placeholder="Name">
+    <label>Credit Card Number</label>
+    <input type="text" name="creditCardNumber" placeholder="0123XXXXXXX">
+    <label>Expiration Date</label>
+    <input type="text" name="expiryDate" placeholder="09/24">
+    <label>CVV</label>
+    <input type="text" name="cvv" placeholder=" XXX">
+         <input type="hidden" name="bookingId" id="bookingId">
+    <button type="button" id="bookSecurelyButton" class="btn">Book Securely</button>
+</form>
+      </div>
+    </div>
+  </div>
+
+  <script src="checkout/script.js"></script>
+  <script>
+    document.getElementById('bookSecurelyButton').addEventListener('click', function() {
+      var button = this;
+      button.innerHTML = "Loading..."; // Change button text to "Loading..."
+      button.disabled = true; // Disable the button
+
+      setTimeout(function() {
+        button.innerHTML = "&#10004; Booked"; // Change button text to a tick mark and "Booked"
+
+        setTimeout(function() {
+          document.getElementById('checkoutForm').submit(); // Manually submit the form
+        }, 2000); // Wait for 2 seconds before submitting the form
+      }, 2000); // Simulate a loading process for 2 seconds
+    });
+  </script>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
