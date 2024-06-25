@@ -1,0 +1,501 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:#EF036C;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+body{
+    background: #323232;
+}
+
+/* Header Start */
+#navbar{
+    background: #f9f9f9;
+  }
+  #logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+  }
+  #logo span{
+    color:#EF036C;
+  }
+  .navbar-toggler span{
+    color:#EF036C;
+    outline: none;
+    /* background-color: blue; */
+  }
+
+  .navbar-nav{
+    margin-left: 20px;
+  }
+  .nav-item .nav-link{
+    font-size: 22px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+  }
+  .nav-item .nav-link:hover{
+    background:#EF036C;
+    color: white;
+  }
+  #navbar form button{
+    background:#EF036C;
+    color: white;
+    border: none;
+  }
+  /* Header End */
+#travel {
+    color: hotpink;
+}
+  /* Home Content Start   */
+/* Higher z-index for Navbar */
+.navbar {
+    z-index: 1050;  /* Typical z-index for fixed or sticky navbars */
+    position: relative;  /* Ensures z-index is applied correctly */
+}
+
+/* Home section styling */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #323232;
+    position: relative;  /* To manage stacking context */
+    z-index: 1;  /* Lower than navbar */
+}
+
+  .home .content{
+    text-align: center;
+    padding-top: 200px;
+  }
+  .home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+  }
+  .home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+  }
+  .home .content p{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .changecontent::after{
+    content: ' ';
+    color: #ff0092;
+    text-shadow: 1px 1px 1px black;
+    animation: changetext 20s infinite linear;
+  }
+
+  @keyframes changetext {
+    0% { content: "France"; }
+    8.33% { content: "Spain"; }
+    16.66% { content: "United States"; }
+    25% { content: "China"; }
+    33.33% { content: "Belgium"; }
+    41.66% { content: "Singapore"; }
+    50% { content: "Italy"; }
+    58.33% { content: "Turkey"; }
+    66.66% { content: "Indonesia"; }
+    75% { content: "Germany"; }
+    83.33% { content: "United Kingdom"; }
+    91.66% { content: "Belgium"; }
+    100% { content: "Norway"; }
+}
+
+  .changecontent {
+    animation: changetext 10s infinite;
+}
+  .home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .home .content a:hover{
+    background:#EF036C;
+    color: white;
+  }
+  @media (max-width: 850px){
+    .home{
+      background-position: 50%;
+    }
+  }
+  @media (max-width: 450px){
+    .home .content h5{
+      font-size: 25px;
+    }
+    .home .content h1{
+      font-size: 38px;
+    }
+    .home .content p{
+      font-size: 13px;
+    }
+  }
+ /* Home Content End   */
+.navmenu {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navmenu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navmenu li {
+            float: left;
+        }
+        .navmenu li a, .dropdown a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navmenu li a:hover, .dropdown:hover .dropbtn {
+            background-color: #111;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+  /* Booking Start    */
+  .book{
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    background: #f9f9f9;
+    padding: 100px 10% 120px;
+
+  }
+.book-img img{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    width: 100%;
+    display: block;
+  }
+  .book-form form{
+    position: relative;
+  }
+  .book-form form input,
+  form textarea{
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    margin-bottom: 10px;
+  }
+  .book-form textarea{
+    resize: none;
+    height: 200px;
+  }
+  .book-form .submit{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    background:#EF036C;
+    color: white;
+    width: 160px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .book-form .submit:hover{
+    width: 175px;
+  }
+  @media (max-width:920px){
+    .book{
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+  }
+::-webkit-scrollbar {
+    height: 10px; /* Adjust height */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff00af;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dropdown-text {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+
+}
+label {
+    color: grey;
+}
+  select {
+    display: inline-grid;
+    font-size: 50px;
+    font-size: 50px;
+
+}
+  .dropdown select {
+    font-size: 23px;
+}
+  .main-text{
+    /* background-color: yellow; */
+    height: 200px;
+  }
+
+    /* Booking End    */
+
+
+  /* Packages Start */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  .main-txt h1 span{
+    color:#EF036C;
+  }
+  .packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .packages .card img{
+    border-radius: 5px;
+  }
+  .packages .card .card-body{
+    background: transparent;
+  }
+  .packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .packages .card .card-body p{
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .star i{
+    font-size: 15px;
+  }
+  .checked{
+    color:#EF036C;
+  }
+  .packages .card .card-body h6{
+    font-size: 20px;
+  }
+  .packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background:#EF036C;
+    color: white;
+    border-radius: 5px;
+  }
+
+  /* Packages End */
+
+
+  /* Section Service :start */
+.services{
+  background: #f9f9f9;
+  margin-top: 50px;
+}
+
+.services .card{
+  box-shadow:  0px 5px 5px -6px black;
+  border: none;
+  cursor: pointer;
+}
+.services .card i{
+  font-size: 80px;
+  text-align: center;
+  color:#EF036C;
+  margin-top: 20px;
+}
+.services .card .card-body h3{
+  font-weight: 700;
+}
+
+
+  /* Section Service :end */
+
+.modal {
+    z-index: 1050; /* Higher than the default to ensure it's on top */
+}
+.custom-modal-size {
+    max-width: 90%; /* Adjust to suit your needs, can be in % or px */
+}
+.modal-body-scrollable {
+  max-height: 400px; /* Adjust based on your preference */
+  overflow-y: auto;  /* Enables vertical scrollbar if needed */
+}
+
+/* Gallery Start */
+.gallary{
+  margin-top: 50px;
+}
+.gallary .card{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.gallary .card img{
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.gallary .card:hover img{
+  transform: scale(1.1);
+}
+/* Gallary End */
+
+
+   /* About Start */
+.about{
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+.about .card{
+  border-radius: 10px;
+}
+.about .card img{
+  border-radius: 10px;
+}
+.about h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p{
+  font-size: 20px;
+}
+#about-btn{
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background:#EF036C;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover{
+  width: 170px;
+}
+/* About End */
+
+
+/* Footer Start */
+#footer{
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  background: #f9f9f9;
+}
+#footer h1{
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+  color:#EF036C;
+}
+.social-links i{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover{
+  background:#EF036C;
+}
+/* Footer End */
+
