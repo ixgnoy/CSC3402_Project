@@ -1,0 +1,116 @@
+/* Checkout page styling */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+/* background  */
+body {
+  margin: 0;
+  padding: 10% 0;
+  min-height: 100vh;
+  background: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+}
+
+/* model of the receipt */
+.model {
+  width: 900px;
+  /* height: 850px; Removed fixed height */
+  background: white;
+  color: white;
+  display: flex; /* Use flex to layout the room and payment side by side */
+  /* Added overflow handling */
+  overflow: hidden;
+}
+
+/* Added room and payment styling */
+.room {
+  width: 50%;
+  background: url("travelling.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: #fff; /* Set text color for readability */
+}
+
+.text-cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.payment {
+  width: 50%;
+  background: #fff; /* Set background to white for readability */
+  color: #34495e; /* Set text color */
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.receipt-box {
+  padding: 20px 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.receipt-box h3,
+.payment-info h3 {
+  margin-bottom: 2rem;
+}
+
+.payment-info {
+  padding: 20px;
+}
+
+/* Added form styling */
+
+input[type=text]{
+    width: 100%;
+    padding: 8px 10px 10px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  width: 100%;
+  display: block;
+  background: #ff0088;
+  text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+.short-input {
+    width: 20%;  /* Adjust as needed */
+    display: inline-block;
+}
+.table td {
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: .25rem;
+  vertical-align: top;
+
+}
+
+
+.table td:nth-child(2) {
+  text-align: right;
+}
