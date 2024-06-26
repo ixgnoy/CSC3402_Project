@@ -30,6 +30,15 @@ Skills:
 - Spring Data JPA (Java Persistence API)
 - Spring Security
 - Figma (For early stage designation)
+- Database Design
+- Application Design (MVC Architecture)
 - ERD is as below:
   <img src="https://github.com/ixgnoy/CSC3402_Project/blob/main/ERD/ERD.png" />
+  <hr>
   
+Relationship is as below:
+
+- One-to-Many Relationship between User and Book (one user can make multiple bookings).
+- One-to-One Relationship between Book and Payment (one booking can have only one payment).
+- One-to-One Relationship between Book and Package (one booking can be within only one package).
+
