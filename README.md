@@ -6,7 +6,9 @@ An e-commerce traveling website (Travel.Now)
 
 Features: 
 - User authentication & User authorization
-- Adsmin side CRUD for package, booking and users
+- Admin side CRUD for package, booking and users
+- User side CRUD for booking and payment.
+- Database
 - Package Listings
 - Booking session
 - Payment for the booking
@@ -18,7 +20,7 @@ Skills:
 - Bootstrap
 - Thymelead
 - Java (Backend)
-- Spring Boot
+- Spring Boot (MVC Framework)
 - H2 database
 - MySQL
 - Postman (Testing)
@@ -28,4 +30,6 @@ Skills:
 - Spring Data JPA (Java Persistence API)
 - Spring Security
 - Figma (For early stage designation)
+- ERD is as below:
+  <img src="https://github.com/ixgnoy/CSC3402_Project/blob/main/ERD/ERD.png" />
   
