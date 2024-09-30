@@ -42,3 +42,7 @@ Relationship is as below:
 - One-to-One Relationship between Book and Payment (one booking can have only one payment).
 - One-to-One Relationship between Book and Package (one booking can be within only one package).
 
+Demonstration is as below:
+1. Login when you're a registered user:
+   <iframe width="420" height="315" src="https://youtu.be/umv8zJHvv3A?controls=1"></iframe>
+
