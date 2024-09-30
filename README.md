@@ -49,4 +49,6 @@ Demonstration is as below:
 2. Register a new account when you're a new user of Travel.Now: <br>
    [![Db Web Dev Register New Acc Demo Video](https://i9.ytimg.com/vi/Gby6tjzD_EU/mqdefault.jpg?v=66fa54c7&sqp=CKSp6bcG&rs=AOn4CLAvo7shPrSI4oCarMBuwTN3f_OyrA)](https://youtu.be/Gby6tjzD_EU "Database Web Dev Demo Video of Register A New Account")
 
+3. Accessing the H2 Database: <br>
+   [![Db Web Dev Register New Acc Demo Video](https://i9.ytimg.com/vi_webp/7N39x59Ddkw/mqdefault.webp?v=66fa58b8&sqp=CKiw6bcG&rs=AOn4CLDSnfxoYGMcxTdx5EAlwMLuwq6J1A)](https://youtu.be/7N39x59Ddkw "Database Web Dev Demo Video of Accessing H2 Db")
 
