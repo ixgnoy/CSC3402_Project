@@ -46,7 +46,7 @@ Demonstration is as below:
 1. Login when you're a registered user:<br>
    [![Db Web Dev Demo Video](https://i9.ytimg.com/vi_webp/umv8zJHvv3A/mqdefault.webp?v=66fa4d82&sqp=CPCY6bcG&rs=AOn4CLDwdFfDD1fSb5pAtk71AqN6ZufOlw)](https://youtu.be/umv8zJHvv3A "Database Web Dev Demo Video")
 
-2. Register a new account when you're a new user of Travel.Now:
+2. Register a new account when you're a new user of Travel.Now: <br>
    [![Db Web Dev Register New Acc Demo Video](https://i9.ytimg.com/vi/Gby6tjzD_EU/mqdefault.jpg?v=66fa54c7&sqp=CKSp6bcG&rs=AOn4CLAvo7shPrSI4oCarMBuwTN3f_OyrA)](https://youtu.be/Gby6tjzD_EU "Database Web Dev Demo Video of Register A New Account")
 
 
